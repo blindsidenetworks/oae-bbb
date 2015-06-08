@@ -1,0 +1,19 @@
+{
+  "name": "oae-bbb",
+  "version": "0.0.0",
+  "description": "An OAE backend module for integrating Big Blue Button",
+  "main": "lib/api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stuartf/oae-bbb.git"
+  },
+  "author": "D. Stuart Freeman",
+  "license": "ECL-2.0",
+  "bugs": {
+    "url": "https://github.com/stuartf/oae-bbb/issues"
+  },
+  "homepage": "https://github.com/stuartf/oae-bbb"
+}
