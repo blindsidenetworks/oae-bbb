@@ -16,15 +16,14 @@
 var Fields = require('oae-config/lib/fields');
 
 module.exports = {
-    'title': 'OAE Big Blue Button Module',
+    'title': 'OAE BigBlueButton Module',
     'bbb': {
-        'name': 'Big Blue Button Configuration',
-        'description': 'Configuration for Big Blue Button conferencing',
+        'name': 'BigBlueButton Configuration',
+        'description': 'Configuration for BigBlueButton conferencing',
         'elements': {
-            'enabled': new Fields.Bool('Enabled', 'Enable conferencing with Big Blue Button', false, {'suppress': true}),
-            'url': new Fields.Text('URL', 'The URL of your Big Blue Button server (e.g., https://bn.bigbluebutton.org)', '', {'suppress': true}),
-            'key': new Fields.Text('Key', 'Your Big Blue Button key', '', {'suppress': true}),
-            'secret': new Fields.Text('Secret', 'Your Big Blue Button secret', '', {'suppress': true})
+            'enabled': new Fields.Bool('Enabled', 'Enable conferencing with BigBlueButton', false, {'suppress': true}),
+            'url': new Fields.Text('URL', 'The URL of your BigBlueButton server \n(e.g., http://test-install.blindsidenetworks.com/bigbluebutton/)', 'http://test-install.blindsidenetworks.com/bigbluebutton/', {'suppress': true}),
+            'secret': new Fields.Text('Secret', 'Your BigBlueButton shared secret \n(e.g. 8cd8ef52e8e101574e400365b55e11a6)', '8cd8ef52e8e101574e400365b55e11a6', {'suppress': true})
         }
     }
 };
