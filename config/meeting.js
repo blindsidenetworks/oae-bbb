@@ -25,5 +25,25 @@ module.exports = {
             'url': new Fields.Text('URL', 'The URL of your BigBlueButton server \n(e.g., http://test-install.blindsidenetworks.com/bigbluebutton/)', 'http://test-install.blindsidenetworks.com/bigbluebutton/', {'suppress': true}),
             'secret': new Fields.Text('Secret', 'Your BigBlueButton shared secret \n(e.g. 8cd8ef52e8e101574e400365b55e11a6)', '8cd8ef52e8e101574e400365b55e11a6', {'suppress': true})
         }
+    },
+    'visibility': {
+        'name': 'Default Visibility Values',
+        'description': 'Default visibility setting for new meetings',
+        'elements': {
+            'meeting': new Fields.List('Meetings Visibility', 'Default visibility for a new meeting', 'public', [
+                {
+                    'name': 'Public',
+                    'value': 'public'
+                },
+                {
+                    'name': 'Authenticated Users',
+                    'value': 'loggedin'
+                },
+                {
+                    'name': 'Private',
+                    'value': 'private'
+                }
+            ])
+        }
     }
 };
