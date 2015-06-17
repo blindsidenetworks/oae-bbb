@@ -22,7 +22,7 @@ module.exports = {
         'description': 'Configuration for BigBlueButton conferencing',
         'elements': {
             'enabled': new Fields.Bool('Enabled', 'Enable conferencing with BigBlueButton', false, {'suppress': true}),
-            'url': new Fields.Text('URL', 'The URL of your BigBlueButton server \n(e.g., http://test-install.blindsidenetworks.com/bigbluebutton/)', 'http://test-install.blindsidenetworks.com/bigbluebutton/', {'suppress': true}),
+            'endpoint': new Fields.Text('Endpoint', 'Your BigBlueButton server URL \n(e.g., http://test-install.blindsidenetworks.com/bigbluebutton/)', 'http://test-install.blindsidenetworks.com/bigbluebutton/', {'suppress': true}),
             'secret': new Fields.Text('Secret', 'Your BigBlueButton shared secret \n(e.g. 8cd8ef52e8e101574e400365b55e11a6)', '8cd8ef52e8e101574e400365b55e11a6', {'suppress': true})
         }
     },
