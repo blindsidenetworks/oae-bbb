@@ -339,8 +339,9 @@ describe('Meetings', function() {
                                                         assert.equal(meeting.displayName, updates.displayName);
                                                         assert.equal(meeting.description, updates.description);
                                                         assert.ok(meeting.canShare);
-                                                        assert.ok(meeting.canPost);
+                                                        assert.ok(meeting.canJoin);
                                                         assert.ok(meeting.isManager);
+                                                        assert.ok(meeting.isModerator);
                                                         return callback();
                                                     });
                                                 });
@@ -660,7 +661,8 @@ describe('Meetings', function() {
 
                                 // Access info
                                 assert.ok(!meeting.isManager);
-                                assert.ok(!meeting.canPost);
+                                assert.ok(!meeting.isModerator);
+                                assert.ok(!meeting.canJoin);
                                 assert.ok(!meeting.canShare);
 
 
@@ -691,7 +693,8 @@ describe('Meetings', function() {
 
                                         // Access info
                                         assert.ok(!meeting.isManager);
-                                        assert.ok(meeting.canPost);
+                                        assert.ok(!meeting.isModerator);
+                                        assert.ok(meeting.canJoin);
                                         assert.ok(meeting.canShare);
 
                                         // Verify they can see, share, post on public
@@ -711,7 +714,8 @@ describe('Meetings', function() {
 
                                             // Access info
                                             assert.ok(!meeting.isManager);
-                                            assert.ok(meeting.canPost);
+                                            assert.ok(!meeting.isModerator);
+                                            assert.ok(meeting.canJoin);
                                             assert.ok(meeting.canShare);
 
 
@@ -740,7 +744,8 @@ describe('Meetings', function() {
 
                                                     // Access info
                                                     assert.ok(!meeting.isManager);
-                                                    assert.ok(meeting.canPost);
+                                                    assert.ok(!meeting.isModerator);
+                                                    assert.ok(meeting.canJoin);
                                                     assert.ok(!meeting.canShare);
 
 
@@ -771,7 +776,8 @@ describe('Meetings', function() {
 
                                                             // Access info
                                                             assert.ok(meeting.isManager);
-                                                            assert.ok(meeting.canPost);
+                                                            assert.ok(meeting.isModerator);
+                                                            assert.ok(meeting.canJoin);
                                                             assert.ok(meeting.canShare);
 
 
@@ -805,7 +811,8 @@ describe('Meetings', function() {
 
                                                                         // Access info
                                                                         assert.ok(!meeting.isManager);
-                                                                        assert.ok(meeting.canPost);
+                                                                        assert.ok(!meeting.isModerator);
+                                                                        assert.ok(meeting.canJoin);
                                                                         assert.ok(meeting.canShare);
 
 
@@ -839,7 +846,8 @@ describe('Meetings', function() {
 
                                                                                     // Access info
                                                                                     assert.ok(!meeting.isManager);
-                                                                                    assert.ok(!meeting.canPost);
+                                                                                    assert.ok(!meeting.isModerator);
+                                                                                    assert.ok(!meeting.canJoin);
                                                                                     assert.ok(!meeting.canShare);
 
                                                                                     return callback();
