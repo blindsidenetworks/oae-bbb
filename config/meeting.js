@@ -23,7 +23,13 @@ module.exports = {
         'elements': {
             'enabled': new Fields.Bool('Enabled', 'Enable conferencing with BigBlueButton', false, {'suppress': true}),
             'endpoint': new Fields.Text('Endpoint', 'Your BigBlueButton server URL \n(e.g., http://test-install.blindsidenetworks.com/bigbluebutton/)', 'http://test-install.blindsidenetworks.com/bigbluebutton/', {'suppress': true}),
-            'secret': new Fields.Text('Secret', 'Your BigBlueButton shared secret \n(e.g. 8cd8ef52e8e101574e400365b55e11a6)', '8cd8ef52e8e101574e400365b55e11a6', {'suppress': true})
+            'secret': new Fields.Text('Secret', 'Your BigBlueButton shared secret \n(e.g. 8cd8ef52e8e101574e400365b55e11a6)', '8cd8ef52e8e101574e400365b55e11a6', {'suppress': true}),
+            'recording': new Fields.Bool('Recording', 'Enable recording capability', false, {'suppress': true}),
+            'recording_default': new Fields.Bool('Recording Default', 'Recording capability enabled by default in new meetings', false, {'suppress': true}),
+            'wait_moderator': new Fields.Bool('Wait Moderator', 'Enable wait moderator capability', false, {'suppress': true}),
+            'wait_moderator_default': new Fields.Bool('Wait Moderator Default', 'Wait moderator capability enabled by default in new meetings', false, {'suppress': true}),
+            'all_moderator': new Fields.Bool('All Moderator', 'Enable all moderator capability', false, {'suppress': true}),
+            'all_moderator_default': new Fields.Bool('All Moderator Default', 'All moderator capability enabled by default in new meetings', false, {'suppress': true})
         }
     },
     'visibility': {
