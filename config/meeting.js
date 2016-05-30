@@ -26,10 +26,10 @@ module.exports = {
             'secret': new Fields.Text('Secret', 'Your BigBlueButton shared secret \n(e.g. 8cd8ef52e8e101574e400365b55e11a6)', '8cd8ef52e8e101574e400365b55e11a6', {'suppress': true}),
             'recording': new Fields.Bool('Recording', 'Enable recording capability', false),
             'recordingDefault': new Fields.Bool('Recording Default', 'Recording capability enabled by default in new meetings', false),
-            'waitModerator': new Fields.Bool('Wait Moderator', 'Enable wait moderator capability', false),
-            'waitModeratorDefault': new Fields.Bool('Wait Moderator Default', 'Wait moderator capability enabled by default in new meetings', false),
             'allModerator': new Fields.Bool('All Moderator', 'Enable all moderator capability', false),
             'allModeratorDefault': new Fields.Bool('All Moderator Default', 'All moderator capability enabled by default in new meetings', false)
+            'waitModerator': new Fields.Bool('Wait Moderator', 'Enable wait moderator capability', false),
+            'waitModeratorDefault': new Fields.Bool('Wait Moderator Default', 'Wait moderator capability enabled by default in new meetings', false),
         }
     },
     'visibility': {
