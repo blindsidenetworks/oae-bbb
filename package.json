@@ -6,7 +6,10 @@
   "license": "ECL-2.0",
   "dependencies": {
     "sha1": ">= 1.1.1",
-    "xml2js": ">= 0.4.9"
+    "xml2js": ">= 0.4.9",
+    "xmldom": ">= 0.1.22",
+    "xpath": ">= 0.0.23",
+    "xml2json": ">= 0.9.1"
   },
   "homepage": "https://github.com/blindsidenetworks/oae-bbb",
   "repository": {
