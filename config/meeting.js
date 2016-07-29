@@ -21,7 +21,7 @@ module.exports = {
         'name': 'BigBlueButton Configuration',
         'description': 'Configuration for BigBlueButton conferencing',
         'elements': {
-            'enabled': new Fields.Bool('Enabled', 'Enable conferencing with BigBlueButton', false, {'suppress': true}),
+            'enabled': new Fields.Bool('Enabled', 'Enable conferencing with BigBlueButton', false),
             'endpoint': new Fields.Text('Endpoint', 'Your BigBlueButton server URL \n(e.g., http://test-install.blindsidenetworks.com/bigbluebutton/)', 'http://test-install.blindsidenetworks.com/bigbluebutton/', {'suppress': true}),
             'secret': new Fields.Text('Secret', 'Your BigBlueButton shared secret \n(e.g. 8cd8ef52e8e101574e400365b55e11a6)', '8cd8ef52e8e101574e400365b55e11a6', {'suppress': true}),
             'recording': new Fields.Bool('Recording', 'Enable recording capability', false),
