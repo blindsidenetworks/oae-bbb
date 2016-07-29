@@ -8,7 +8,8 @@
     "sha1": ">= 1.1.1",
     "xmldom": ">= 0.1.22",
     "xpath": ">= 0.0.23",
-    "xml2js": ">= 0.4.9"
+    "xml2js": ">= 0.4.9",
+    "jsonwebtoken": "latest"
   },
   "homepage": "https://github.com/blindsidenetworks/oae-bbb",
   "repository": {
